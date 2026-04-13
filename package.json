@@ -1,0 +1,44 @@
+{
+  "name": "@gonzih/dealscout",
+  "version": "1.0.0",
+  "description": "Private equity intelligence MCP — business scouting, owner profiling, deal structuring",
+  "bin": {
+    "dealscout": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest --passWithNoTests"
+  },
+  "keywords": [
+    "mcp",
+    "private-equity",
+    "deal-scouting",
+    "business-acquisition",
+    "hvac",
+    "small-business"
+  ],
+  "author": "gonzih",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.29.0",
+    "zod": "3.25.28"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.2",
+    "typescript": "5.7.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
